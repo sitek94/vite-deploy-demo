@@ -1,6 +1,12 @@
 # Deploy Vite app to GitHub Pages using GitHub Actions
 
-## Scaffold a new Vite app and init git
+## Video tutorial
+
+[![Screen Shot 2022-05-15 at 18 03 44](https://user-images.githubusercontent.com/58401630/168482351-ee1ae441-31a4-48f7-b3f1-09296ae82818.png)]()
+
+## Step-by-step instructions
+
+### Scaffold a new Vite app and init git
 
 ```bash
 # Create new Vite project using React template
@@ -22,7 +28,7 @@ git commit -m "init vite project"
 
 * https://vitejs.dev/guide/#scaffolding-your-first-vite-project
 
-## Create a new GitHub repository
+### Create a new GitHub repository
 
 Go to https://github.com/new and create a new repository.
 
@@ -37,7 +43,7 @@ git branch -M main
 git push -u origin main
 ```
 
-## Create deployment workflow
+### Create deployment workflow
 
 Create a new file: `.github/workflows/deploy.yml` and paste the following code:
 
@@ -97,7 +103,7 @@ jobs:
 
 This workflow will run on every push to the `main` branch. It will first build the project, and then deploy it to GitHub pages.
 
-## Test deployment workflow
+### Test deployment workflow
 
 Commit deployment workflow and push the changes to GitHub.
 
@@ -112,7 +118,7 @@ you should see that it failed, because of missing permissions:
 
 ![Screen Shot 2022-05-15 at 16 33 13](https://user-images.githubusercontent.com/58401630/168478218-93f9fda7-91ff-49fb-b96c-8aa5e682ef70.png)
 
-## Ensure Actions have `write` permission
+### Ensure Actions have `write` permission
 
 To fix that, go to [Actions Settings](https://github.com/sitek94/vite-deploy-demo/settings/actions), 
 select **Read and write permissions** and hit **Save**:
@@ -130,7 +136,7 @@ After job run, you should be able to see a new branch `gh-pages` created in your
 
 ![Screen Shot 2022-05-15 at 16 43 26](https://user-images.githubusercontent.com/58401630/168478674-fa8f5cd7-305d-469d-ae86-c7bb96bf232f.png)
 
-## Enable GitHub pages
+### Enable GitHub pages
 
 To host the app, go to [Pages Settings](https://github.com/sitek94/vite-deploy-demo/settings/pages), set **Source** to `gh-pages`, and hit **Save**.
 
@@ -143,7 +149,7 @@ go to [Actions](https://github.com/sitek94/vite-deploy-demo/actions) and **pages
 
 Once deployment is done, visit the app at: `https://<YOUR_GITHUB_USER>.github.io/REPO_NAME`
 
-## Fix assets links
+### Fix assets links
 
 You will see that something is not right, because instead of there is a blank screen. When you inspect it, you will see that some files were not found.
 
@@ -175,7 +181,7 @@ export default defineConfig({
 
 Now, asset links will have a correct path, so commit the changes, push the code, wait for the deploy to finish and see it for yourself!
 
-## Final 
+### Final 
 
 ![Screen Shot 2022-05-15 at 17 31 23](https://user-images.githubusercontent.com/58401630/168480802-95978d6c-2532-49f0-b118-6a313286d512.png)
 
