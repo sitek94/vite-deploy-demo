@@ -2,7 +2,7 @@
 
 ## Video tutorial
 
-[![Screen Shot 2022-05-15 at 18 03 44](https://user-images.githubusercontent.com/58401630/168482351-ee1ae441-31a4-48f7-b3f1-09296ae82818.png)]()
+[![Screen Shot 2022-05-15 at 18 03 44](https://user-images.githubusercontent.com/58401630/168482351-ee1ae441-31a4-48f7-b3f1-09296ae82818.png)](https://www.youtube.com/watch?v=MKw-IriprJY)
 
 ## Step-by-step instructions
 
