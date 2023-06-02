@@ -183,6 +183,10 @@ Now, asset links will have a correct path, so commit the changes, push the code,
 
 ![Screen Shot 2022-05-15 at 17 31 23](https://user-images.githubusercontent.com/58401630/168480802-95978d6c-2532-49f0-b118-6a313286d512.png)
 
+## FAQ
+
+- [How to setup custom domain?](https://github.com/sitek94/vite-deploy-demo-custom-domain)
+
 ## Resources
 
 - [Vite](https://vitejs.dev/)
