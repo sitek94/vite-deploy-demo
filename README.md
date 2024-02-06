@@ -176,6 +176,12 @@ export default defineConfig({
 +  base: '/vite-deploy-demo/'
 })
 ```
+If you'd prefer not to edit your vite config, you can use the `--base` flag when building your app in the workflow file:
+```diff
+       - name: Build project
+-        run: npm run build
++        run: npm run build --base "/vite-deploy-demo/"
+```
 
 Now, asset links will have a correct path, so commit the changes, push the code, wait for the deploy to finish and see it for yourself!
 
