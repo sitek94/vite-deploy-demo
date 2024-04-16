@@ -2,7 +2,7 @@
 	<div class="App">
 		<header class="App-header">
 			<img :src="logo" class="App-logo" alt="logo" />
-			<p>Hello Vite + Vue!</p>
+			<p>BuddyGen</p>
 			<p>
 				<button type="button" @click="incrementCount">
 					count is: {{ count }}
