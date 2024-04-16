@@ -32,8 +32,9 @@
 	</div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue';
+// @ts-ignore
 import logo from './logo.svg';
 import './App.css';
 
